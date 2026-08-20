@@ -1,0 +1,20 @@
+# Model weights and heavy binary files
+*.onnx
+*.pth
+*.caffemodel
+*.rar
+*.zip
+
+# Exception for active models
+!yolo11n-face.pt
+
+# Python/Environment caches
+__pycache__/
+*.pyc
+.cache/
+.vscode/
+.idea/
+.agents/
+.gemini/
+venv/
+env/

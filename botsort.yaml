@@ -1,0 +1,19 @@
+# Konfigurasi BoT-SORT Tracker Default untuk YOLO
+# Dokumentasi lengkap: https://docs.ultralytics.com/modes/track
+
+tracker_type: botsort           # (str) Backend pelacak: botsort
+track_high_thresh: 0.25         # (float) Ambang batas pencocokan tahap pertama (first-stage match threshold)
+track_low_thresh: 0.1           # (float) Ambang batas pencocokan tahap kedua untuk deteksi dengan skor rendah
+new_track_thresh: 0.25          # (float) Ambang batas untuk memulai track baru jika tidak ada kecocokan
+track_buffer: 30                # (int) Jumlah frame untuk mempertahankan objek yang hilang/terhalang (lost tracks) tetap hidup
+match_thresh: 0.8               # (float) Ambang batas kemiripan asosiasi (IoU / biaya jarak)
+fuse_score: True                # (bool) Gabungkan skor deteksi dengan gerakan/IoU untuk menstabilkan deteksi lemah
+
+# Pengaturan Spesifik BoT-SORT
+gmc_method: sparseOptFlow       # (str) Metode kompensasi gerakan kamera (Global Motion Compensation): sparseOptFlow|orb|sift|ecc|none
+
+# Pengaturan ReID (Re-Identification)
+proximity_thresh: 0.5           # (float) Batas minimum IoU untuk kedekatan track pada ReID
+appearance_thresh: 0.8          # (float) Batas minimum kecocokan penampilan untuk ReID agar menghindari ID tertukar (identity swaps)
+with_reid: False                # (bool) Aktifkan fitur ReID (membutuhkan komputasi dan model tambahan)
+model: auto                     # (str) Jalur/Nama model ReID (pilihan 'auto' akan menggunakan fitur bawaan detektor jika ada)
