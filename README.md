@@ -13,12 +13,12 @@ Pipeline analisis wajah real-time berkinerja tinggi yang dirancang untuk melakuk
 
 ## 📁 Struktur Direktori Proyek
 ```text
-├── model_Yolov11n_bounding_box_botsort_agentic.py  # Skrip utama pipeline real-time
+├── model_Yolov11n_bounding_box_botsort.py          # Skrip utama pipeline real-time
 ├── requirements.txt                                # Daftar dependensi Python
 ├── .gitignore                                      # File pengecualian Git
+├── botsort.yaml                                    # File tracking
 └── README.md                                       # Dokumentasi proyek ini
 ```
-> **Catatan:** File model berukuran besar (`*.pt`, `*.onnx`) sengaja diabaikan oleh `.gitignore` untuk menjaga ukuran repositori tetap ringan. Unduh file model tersebut secara terpisah (lihat bagian [Unduh Model](#-unduh-model)).
 
 ---
 
