@@ -90,6 +90,3 @@ analyzer.start_webcam(camera_source=0, frame_interval=3)
 ```
 
 ---
-
-## 📝 Lisensi
-Proyek ini dilisensikan di bawah lisensi MIT. Bebas digunakan untuk tujuan akademik maupun komersial.
